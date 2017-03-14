@@ -1,0 +1,52 @@
+/* 16px == 1rem */
+  html { font-size: 16px;}
+
+  img {
+    width: 25%;
+  }
+
+  .amendment-title {
+    color: green;
+    text-align: center;
+  }
+  /*This is not overriden because it has a high specificity.*/
+  .amendment-title:hover {
+    color: red;
+  }
+
+  .amendment-title::first-letter{
+    font-size: 5rem;
+  }
+
+  .document-history{
+    background-color: yellow;
+  }
+  /*The selector should describe what it is, in context with the page, not what it looks like.*/
+  .amendment-body{
+    text-align: center;
+  }
+
+  .document-history{
+    background-color: yellow;
+  }
+  /*Below is an example of a nested selector*/
+  /*Tells CSS to look inside document-history for paragraph tags*/
+  .document-history p {
+    width: 50%;
+  }
+
+  .document-history h4 {
+    background-color: papayawhip;
+  }
+
+  #bill-of-rights{
+    font-style: italic;
+  }
+
+  .highlight {
+    background-color: salmon;
+  }
+  /*Bottom of cascade means it overrides. */
+  [class] {
+    /*color: orange;*/
+  }
